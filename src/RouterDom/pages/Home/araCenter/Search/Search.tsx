@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState } from 'react'
 import { ISearch } from '../../../../../Type'
 import { Input, Modal } from 'antd'
 import { AiOutlineUserAdd,AiOutlineUsergroupAdd,AiOutlineSearch } from "react-icons/ai";
+import {FormCreateGroupChat} from '../FormGroupChat/FormCreateGroupChat';
 export  const SearchPage:FunctionComponent<any>=({SearchHand,setSeachHandle,setSearchValue})=> {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const clickCloseSeach=(value:boolean)=>{
@@ -29,7 +30,7 @@ export  const SearchPage:FunctionComponent<any>=({SearchHand,setSeachHandle,setS
       <div className='flex gap-3'>
             <AiOutlineUserAdd className='cursor-pointer' onClick={()=>{setIsModalOpen(true)}}/>
             <AiOutlineUsergroupAdd className='cursor-pointer'/>
-            {/* <GroupChat isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/> */}
+            <FormCreateGroupChat isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
   
         </div>}
         
