@@ -16,7 +16,7 @@ const UserContextProvider=({children}: {children: React.ReactNode})=>{
     const [idUser,setIdUser]=useState<string>("");
     const [socket, setSocket] = useState<Socket>(null!);
     const [token,setToken]=useState<string|null>(null);
-    console.log((tokenLocal))
+
    
     useEffect(()=>{
       

@@ -56,9 +56,8 @@ const userSlide = createSlice({
           message: "Thông báo",
           description: "login success",
         });
+       
         localStorage.setItem('user', JSON.stringify(action.payload.data));
-        
-
       }
       if(action.payload.data.token){
        

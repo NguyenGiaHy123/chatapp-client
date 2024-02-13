@@ -15,6 +15,8 @@ import "swiper/css/navigation";
 import 'swiper/css/autoplay';
 function App() {
   const showPageUser = (AllPage: any) => {
+    // localStorage.removeItem("user");
+    // localStorage.removeItem("tokenUser");
   
     if (AllPage.length > 0) {
       return AllPage.map((page: any, index: any) => (
